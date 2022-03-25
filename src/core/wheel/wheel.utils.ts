@@ -89,7 +89,6 @@ export const handleCalculateWheelZoom = (
 
   if (getTarget) return targetScale;
   const paddingEnabled = disablePadding ? false : !disabled;
-  console.log('target scale', targetScale)
   const newScale = checkZoomBounds(
     roundNumber(targetScale, 3),
     minScale,
