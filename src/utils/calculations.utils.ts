@@ -4,6 +4,7 @@
  */
 export const roundNumber = (num: number, decimal: number) => {
   // num = checkIsNumber(num, 0);
+  console.trace('trace', num)
   return typeof num === "number" ? Number(num.toFixed(decimal)) : false;
   // return Number(num.toFixed(decimal));
 };
