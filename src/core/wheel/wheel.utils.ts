@@ -87,6 +87,7 @@ export const handleCalculateWheelZoom = (
 
   const targetScale = scale + delta * (scale - scale * step) * step;
   // eslint-disable-next-line no-console
+  // eslint-disable-next-line no-debugger
   console.trace('targetScale', targetScale, scale, delta, step )
 
   if (getTarget) return targetScale;
