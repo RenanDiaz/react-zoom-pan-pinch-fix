@@ -86,6 +86,8 @@ export const handleCalculateWheelZoom = (
   }
 
   const targetScale = scale + delta * (scale - scale * step) * step;
+  // eslint-disable-next-line no-console
+  console.trace('targetScale', targetScale, scale, delta, step )
 
   if (getTarget) return targetScale;
   const paddingEnabled = disablePadding ? false : !disabled;
