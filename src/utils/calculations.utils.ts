@@ -3,6 +3,7 @@
  * eg. roundNumber(2.34343, 1) => 2.3
  */
 export const roundNumber = (num: number, decimal: number) => {
+  console.log('here we go', num)
   return Number(num.toFixed(decimal));
 };
 
