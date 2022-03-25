@@ -5,7 +5,7 @@ export const getTransformStyles = (
   y: number,
   scale: number,
 ): string => {
-  return `translate(${x}px, ${y}px) scale(${scale})`;
+  return `matrix(${scale}, 0,0, ${scale}, ${x}, ${y})`;
 };
 
 export const getCenterPosition = (
