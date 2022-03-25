@@ -4,9 +4,6 @@
  */
 export const roundNumber = (num: number, decimal: number) => {
   // num = checkIsNumber(num, 0);
-  // eslint-disable-next-line no-console
-  // eslint-disable-next-line no-debugger
-  console.trace('trace', num);
   return typeof num === "number" ? Number(num.toFixed(decimal)) : 0;
   // return Number(num.toFixed(decimal));
 };
