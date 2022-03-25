@@ -3,8 +3,9 @@
  * eg. roundNumber(2.34343, 1) => 2.3
  */
 export const roundNumber = (num: number, decimal: number) => {
-  num = checkIsNumber(num, 0)
-  return Number(num.toFixed(decimal));
+  // num = checkIsNumber(num, 0);
+  return typeof num === "number" ? Number(num.toFixed(decimal)) : false;
+  // return Number(num.toFixed(decimal));
 };
 
 /**
